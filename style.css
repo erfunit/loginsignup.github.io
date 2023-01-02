@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    background-image: url('./backback.svg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form{
+    
+    text-align: center;
+    /* From https://css.glass */
+    background: rgba(215, 215, 215, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.234);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: px solid rgba(255, 255, 255, 0.43);
+/* 
+    width: 400px;
+    height: 300px; */
+    border-radius: 15px;
+
+    transition: 1s;
+}
+
+#form-title{
+    display: block;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: #9E00D4;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.login-signup-container{
+    display: flex;
+    padding: 7px;
+    justify-content: center;
+}
+
+.login-signup-container > button{
+    margin: 5px;
+    border-radius: 6px;
+    color: rgb(74, 74, 74);
+    border: none;
+    padding: 10px;
+    font-size: 19px;
+    background-color: rgba(255, 255, 255, 0.419);
+    transition: 0.2s;
+}
+.login-signup-container > button:hover{
+    transform: scale(1.1);
+}
+input{
+    background-color: rgba(240, 248, 255, 0.654);
+    border: none;
+    margin: 10px 27px;
+    padding: 8px;
+    font-size: 19px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+input:focus{
+    outline: none;
+    border-bottom-style:solid ;
+    border-bottom-width: 5px;
+    border-bottom-color: #9E00D4;
+}
+#loginBtn{
+    margin: 20px;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 25px;
+    font-size: 19px;
+    background-color: #a10fd1;
+    transition: 0.3s;
+}
+#loginBtn:hover{
+    background-color: #6a2e7e;
+}
+#loginBtn:active{
+    transform: scale(0.9);
+}
+
+.singup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
