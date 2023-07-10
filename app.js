@@ -21,6 +21,7 @@ itslogin.addEventListener('click',(e)=>{
     itssignup.style.color='rgb(74, 74, 74)'
     signupform.style.display ='none'
     loginform.style.display ='flex'
+    document.querySelector('#loginBtn').innerHTML="login"
 })
 
 itssignup.addEventListener('click',(e)=>{
@@ -32,12 +33,14 @@ itssignup.addEventListener('click',(e)=>{
     itslogin.style.color='rgb(74, 74, 74)'
     signupform.style.display ='flex'
     loginform.style.display ='none'
+    document.querySelector('#loginBtn').innerHTML="sign up"
+
 })
 
 
 
 form.addEventListener('submit',(event)=>{
-    event.preventDefault()
+    // event.preventDefault()
     let username=event.target.elements.username
     let password=event.target.elements.password
 
