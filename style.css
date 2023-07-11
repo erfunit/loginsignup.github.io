@@ -108,3 +108,8 @@ input:focus{
 button{
     cursor: pointer;
 }
+.herror{
+    font-family: Arial;
+    font-size: 0.7em;
+    color:red;
+}

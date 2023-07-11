@@ -11,6 +11,7 @@ CREATE DATABASE IF NOT EXISTS enter;
 USE enter;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
+  `username` varchar(70) NOT NULL UNIQUE,
   `fname` varchar(70) NOT NULL,
   `lname` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
